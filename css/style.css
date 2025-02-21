@@ -8,6 +8,12 @@
     --transition: all 0.3s ease;
 }
 
+[data-theme="dark"] {
+    --background-color: #0f172a;
+    --text-color: #f1f5f9;
+    --accent-color: #1e293b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -423,6 +429,83 @@ body {
     position: absolute;
     left: 0;
     color: var(--primary-color);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    background: var(--accent-color);
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 5rem 10%;
+    background: var(--accent-color);
+}
+
+.certifications h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.certification-card {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cert-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.certification-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.certification-card p {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.cv-download {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cv-download .cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /* Footer */

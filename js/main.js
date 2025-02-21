@@ -1,3 +1,29 @@
+// Gestion du thème sombre/clair
+const themeToggle = document.querySelector('.theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+    body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', body.dataset.theme);
+    updateThemeIcon();
+});
+
+function updateThemeIcon() {
+    const icon = themeToggle.querySelector('i');
+    if (body.dataset.theme === 'dark') {
+        icon.className = 'fas fa-sun';
+    } else {
+        icon.className = 'fas fa-moon';
+    }
+}
+
+// Charger le thème sauvegardé
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    body.dataset.theme = savedTheme;
+    updateThemeIcon();
+}
+
 // Animation au défilement
 function handleScrollAnimation() {
     const elements = document.querySelectorAll('.fade-in');
