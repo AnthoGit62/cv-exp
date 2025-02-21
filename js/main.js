@@ -84,30 +84,6 @@ function handleScrollAnimation() {
     });
 }
 
-// Gestion du formulaire de contact
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const submitBtn = contactForm.querySelector('.submit-btn');
-    const originalBtnText = submitBtn.textContent;
-    
-    try {
-        submitBtn.textContent = 'Envoi en cours...';
-        // Simulation d'envoi (à remplacer par votre logique d'envoi réelle)
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
-        // Réinitialiser le formulaire et afficher un message de succès
-        contactForm.reset();
-        alert('Message envoyé avec succès !');
-    } catch (error) {
-        alert('Une erreur est survenue. Veuillez réessayer.');
-    } finally {
-        submitBtn.textContent = originalBtnText;
-    }
-});
-
 // Navigation fluide
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
