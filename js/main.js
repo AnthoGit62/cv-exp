@@ -1,3 +1,11 @@
+/*
+    Auteur: Anthony SEYS
+    Description: JavaScript pour le CV en ligne personnel
+    GitHub: https://github.com/AnthoGit62
+    LinkedIn: https://www.linkedin.com/in/anthony-seys-565180300
+    Date de création: Février 2024
+*/
+
 // Gestion du thème sombre/clair
 const themeToggle = document.querySelector('.theme-toggle');
 const body = document.body;
