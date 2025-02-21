@@ -74,6 +74,38 @@ function updateActiveNavLink() {
     });
 }
 
+// Gestion des cartes de projet sur mobile
+document.addEventListener('DOMContentLoaded', () => {
+    const projectItems = document.querySelectorAll('.project-item');
+    let activeItem = null;
+
+    projectItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Si on est sur desktop (>768px), on ne fait rien
+            if (window.innerWidth > 768) return;
+
+            // Si un item était déjà actif, on le désactive
+            if (activeItem && activeItem !== item) {
+                activeItem.classList.remove('active');
+            }
+
+            // Toggle l'état actif de l'item cliqué
+            item.classList.toggle('active');
+            activeItem = item.classList.contains('active') ? item : null;
+        });
+    });
+
+    // Fermer la carte active si on clique ailleurs
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth > 768) return;
+        
+        if (!e.target.closest('.project-item') && activeItem) {
+            activeItem.classList.remove('active');
+            activeItem = null;
+        }
+    });
+});
+
 // Event Listeners
 window.addEventListener('scroll', () => {
     handleScrollAnimation();
