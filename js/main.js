@@ -77,31 +77,38 @@ function updateActiveNavLink() {
 // Gestion des cartes de projet sur mobile
 document.addEventListener('DOMContentLoaded', () => {
     const projectItems = document.querySelectorAll('.project-item');
-    let activeItem = null;
 
     projectItems.forEach(item => {
-        item.addEventListener('click', () => {
-            // Si on est sur desktop (>768px), on ne fait rien
-            if (window.innerWidth > 768) return;
-
-            // Si un item était déjà actif, on le désactive
-            if (activeItem && activeItem !== item) {
-                activeItem.classList.remove('active');
+        // Empêcher le comportement de "touch and hold" sur mobile
+        item.addEventListener('touchstart', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                toggleProjectCard(item);
             }
+        });
 
-            // Toggle l'état actif de l'item cliqué
-            item.classList.toggle('active');
-            activeItem = item.classList.contains('active') ? item : null;
+        // Pour les clics sur desktop
+        item.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                toggleProjectCard(item);
+            }
         });
     });
 
-    // Fermer la carte active si on clique ailleurs
+    // Fonction pour basculer l'état d'une carte
+    function toggleProjectCard(item) {
+        item.classList.toggle('active');
+    }
+
+    // Fermer la carte si on clique en dehors
     document.addEventListener('click', (e) => {
-        if (window.innerWidth > 768) return;
-        
-        if (!e.target.closest('.project-item') && activeItem) {
-            activeItem.classList.remove('active');
-            activeItem = null;
+        if (window.innerWidth <= 768 && !e.target.closest('.project-item')) {
+            projectItems.forEach(item => {
+                if (item.classList.contains('active')) {
+                    item.classList.remove('active');
+                }
+            });
         }
     });
 });
