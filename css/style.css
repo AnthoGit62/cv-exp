@@ -451,7 +451,7 @@ body {
 /* Certifications Section */
 .certifications {
     padding: 5rem 10%;
-    background: var(--accent-color);
+    text-align: center;
 }
 
 .certifications h2 {
@@ -461,10 +461,11 @@ body {
 }
 
 .certifications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 800px;
 }
 
 .certification-card {
@@ -474,27 +475,34 @@ body {
     text-align: center;
     transition: var(--transition);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .certification-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .cert-logo {
-    width: 120px;
+    width: 200px;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
+    display: block;
 }
 
 .certification-card h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 .certification-card p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     color: var(--text-color);
+    font-size: 1.1rem;
 }
 
 .cv-download {
@@ -506,6 +514,10 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.cv-download i {
+    font-size: 1.2rem;
 }
 
 /* Footer */
