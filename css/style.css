@@ -594,6 +594,16 @@ footer {
     color: var(--primary-color);
 }
 
+/* Scroll to Top */
+#scrollToTop {
+    /* transition: opacity 0.5s ease-in-out; */
+    /* opacity: 0; */ /* Commence invisible */
+}
+
+#scrollToTop.visible {
+    /* opacity: 1; */ /* Devient visible */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
