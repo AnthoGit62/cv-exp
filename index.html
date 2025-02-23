@@ -7,215 +7,187 @@
 -->
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mon Portfolio</title>
-        
-        <!-- Favicon -->
-        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg">
-        
-        <!-- Styles -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/animations.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <div class="nav-links">
-            <a href="#home" class="active">Accueil</a>
-            <a href="#projects">Projets</a>
-            <a href="#about">À propos</a>
-            <a href="#formation">Formation</a>
-            <a href="#certifications">Certifications</a>
-        </div>
-        <div class="theme-toggle">
-            <i class="fas fa-moon"></i>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Anthony SEYS</h1>
-            <p>Étudiant en BUT Informatique</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="cta-primary">Voir mes projets</a>
-                <a href="#about" class="cta-secondary">En savoir plus</a>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#home" class="active">Accueil</a>
+                <a href="#projects">Projets</a>
+                <a href="#about">À propos</a>
+                <a href="#formation">Formation</a>
+                <a href="#certifications">Certifications</a>
             </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Mes Projets</h2>
-        <div class="projects-container">
-            <div class="project-item">
-                <div class="project-inner">
-                    <div class="project-front">
-                        <div class="project-content">
-                            <i class="fas fa-gamepad"></i>
-                            <h3>Tic Tac Toe Réseau</h3>
-                            <p>Jeu multijoueur en C avec sockets</p>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Anthony SEYS</h1>
+                <p>Étudiant en BUT Informatique</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-primary">Voir mes projets</a>
+                    <a href="#about" class="cta-secondary">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Mes Projets</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-content">
+                                <i class="fas fa-gamepad"></i>
+                                <h3>Tic Tac Toe Réseau</h3>
+                                <p>Jeu multijoueur en C avec sockets</p>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <h4>Caractéristiques</h4>
+                                <ul>
+                                    <li>Socket Programming en C</li>
+                                    <li>Multi-clients TCP/IP</li>
+                                    <li>Gestion des parties simultanées</li>
+                                    <li>Interface console interactive</li>
+                                </ul>
+                                <a href="https://github.com/louisprvst/SAE_Socket" class="project-link">Voir le code</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-back">
-                        <div class="project-details">
-                            <h4>Caractéristiques</h4>
-                            <ul>
-                                <li>Socket Programming en C</li>
-                                <li>Multi-clients TCP/IP</li>
-                                <li>Gestion des parties simultanées</li>
-                                <li>Interface console interactive</li>
-                            </ul>
-                            <a href="https://github.com/louisprvst/SAE_Socket" class="project-link">Voir le code</a>
+                </div>
+                <div class="project-item">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-content">
+                                <i class="fas fa-satellite"></i>
+                                <h3>Image Processing</h3>
+                                <p>Traitement d'images en Python</p>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <h4>Fonctionnalités</h4>
+                                <ul>
+                                    <li>Sélection de satellites</li>
+                                    <li>Coordonnées géographiques</li>
+                                    <li>Filtres RGB ajustables</li>
+                                    <li>Traitement d'images</li>
+                                </ul>
+                                <a href="https://github.com/louisprvst/image-processing" class="project-link">Voir le code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="project-item">
-                <div class="project-inner">
-                    <div class="project-front">
-                        <div class="project-content">
-                            <i class="fas fa-satellite"></i>
-                            <h3>Image Processing</h3>
-                            <p>Traitement d'images en Python</p>
+        </section>
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>À propos de moi</h2>
+                <p>Passionné par les réseaux informatiques, je suis un étudiant qui apprécie également la programmation mais qui a choisi de se spécialiser dans le domaine des réseaux. En dehors de l'informatique, j'aime la pêche, ce qui me permet de déconnecter et de profiter de la nature.</p>
+                <p>Je suis actuellement à la recherche d'une alternance pour ma 3e année de BUT Informatique, parcours Réseaux et Télécommunications.</p>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h3>Compétences</h3>
+                        <div class="skills-grid">
+                            <div class="skill">
+                                <i class="fas fa-network-wired"></i>
+                                <span>TCP/IP</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-code"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-terminal"></i>
+                                <span>C</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-back">
-                        <div class="project-details">
-                            <h4>Fonctionnalités</h4>
-                            <ul>
-                                <li>Sélection de satellites</li>
-                                <li>Coordonnées géographiques</li>
-                                <li>Filtres RGB ajustables</li>
-                                <li>Traitement d'images</li>
-                            </ul>
-                            <a href="https://github.com/louisprvst/image-processing" class="project-link">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>À propos de moi</h2>
-            <p>Passionné par les réseaux informatiques, je suis un étudiant qui apprécie également la programmation mais qui a choisi de se spécialiser dans le domaine des réseaux. En dehors de l'informatique, j'aime la pêche, ce qui me permet de déconnecter et de profiter de la nature.</p>
-            <p>Je suis actuellement à la recherche d'une alternance pour ma 3e année de BUT Informatique, parcours Réseaux et Télécommunications.</p>
-            
-            <div class="skills">
-                <div class="skill-category">
-                    <h3>Compétences</h3>
-                    <div class="skills-grid">
-                        <div class="skill">
-                            <i class="fas fa-network-wired"></i>
-                            <span>TCP/IP</span>
-                        </div>
-                        <div class="skill">
-                            <i class="fas fa-code"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill">
-                            <i class="fas fa-terminal"></i>
-                            <span>C</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Outils</h3>
-                    <div class="skills-grid">
-                        <div class="skill">
-                            <i class="fas fa-tools"></i>
-                            <span>Packet Tracer</span>
-                        </div>
-                        <div class="skill">
-                            <i class="fas fa-code-branch"></i>
-                            <span>Windsurf</span>
-                        </div>
-                        <div class="skill">
-                            <i class="fas fa-box"></i>
-                            <span>VirtualBox</span>
+                    <div class="skill-category">
+                        <h3>Outils</h3>
+                        <div class="skills-grid">
+                            <div class="skill">
+                                <i class="fas fa-tools"></i>
+                                <span>Packet Tracer</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-code-branch"></i>
+                                <span>Windsurf</span>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-box"></i>
+                                <span>VirtualBox</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="formation" class="formation">
-        <h2>Parcours de Formation</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="date">2023 - Présent</div>
-                <div class="content">
-                    <h3>BUT Informatique</h3>
-                    <p>Spécialisation en Réseaux et Systèmes</p>
-                    <p>IUT de Calais</p>
-                    <ul class="formation-details">
-                        <li>Administration systèmes et réseaux</li>
-                        <li>Développement et programmation</li>
-                        <li>Protocoles</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="date">2020 - 2023</div>
-                <div class="content">
-                    <h3>Baccalauréat STI2D</h3>
-                    <p>Lycée</p>
-                    <div class="project-highlight">
-                        <h4>Projet : Chambre d'hôpital connectée</h4>
-                        <p>Développement d'un système de surveillance intelligent pour chambre d'hôpital</p>
-                        <ul class="project-features">
-                            <li>Détecteur de chute, envoie d'un SMS d'urgence</li>
-                            <li>Gestion de la chambre pour le patient via une tablette</li>
-                            <li>Interface de monitoring en temps réel</li>
+        </section>
+        <section id="formation" class="formation">
+            <h2>Parcours de Formation</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2023 - Présent</div>
+                    <div class="content">
+                        <h3>BUT Informatique</h3>
+                        <p>Spécialisation en Réseaux et Systèmes</p>
+                        <p>IUT de Calais</p>
+                        <ul class="formation-details">
+                            <li>Administration systèmes et réseaux</li>
+                            <li>Développement et programmation</li>
+                            <li>Protocoles</li>
                         </ul>
                     </div>
                 </div>
+                <div class="timeline-item">
+                    <div class="date">2020 - 2023</div>
+                    <div class="content">
+                        <h3>Baccalauréat STI2D</h3>
+                        <p>Lycée</p>
+                        <div class="project-highlight">
+                            <h4>Projet : Chambre d'hôpital connectée</h4>
+                            <p>Développement d'un système de surveillance intelligent pour chambre d'hôpital</p>
+                            <ul class="project-features">
+                                <li>Détecteur de chute, envoie d'un SMS d'urgence</li>
+                                <li>Gestion de la chambre pour le patient via une tablette</li>
+                                <li>Interface de monitoring en temps réel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="certifications" class="certifications">
-        <h2>Certifications</h2>
-        <div class="certifications-grid">
-            <div class="certification-card">
-                <img src="assets/ccna.png" alt="CCNA Logo" class="cert-logo"/>
-                <h3>Cisco CCNA</h3>
-                <p>Certification en cours</p>
-                <p>Réseaux et Infrastructure</p>
+        </section>
+        <section id="certifications" class="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <img src="assets/img_ccna.png" alt="CCNA Image" class="cert-logo"/>
+                    <h3>Cisco CCNA</h3>
+                    <p>Certification en cours</p>
+                    <p>Réseaux et Infrastructure</p>
+                </div>
             </div>
-        </div>
-        <div class="cv-download">
-            <a href="./assets/cv.pdf" download class="cta-primary">
-                <i class="fas fa-download"></i> Télécharger mon CV
-            </a>
-        </div>
-    </section>
-
-    <div id="scrollToTop" style="display: none; position: fixed; bottom: 20px; right: 20px; cursor: pointer;">
-    <img src="assets/arrow-icon.png" alt="Back to top" style="width: 50px; height: 50px;">
-</div>
-
-<script>
-    const scrollToTopButton = document.getElementById('scrollToTop');
-    window.addEventListener('scroll', () => {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            scrollToTopButton.style.display = 'block';
-        } else {
-            scrollToTopButton.style.display = 'none';
-        }
-    });
-    scrollToTopButton.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-</script>
-
+            <div class="cv-download">
+                <a href="download/dl_cv.pdf" download class="cta-primary">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </a>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="social-links">
             <a href="https://github.com/AnthoGit62" target="_blank"><i class="fab fa-github"></i></a>
@@ -223,7 +195,14 @@
         </div>
         <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
     </footer>
+    <div id="scrollToTop" style="display: none; position: fixed; bottom: 20px; right: 20px; cursor: pointer;">
+        <img src="assets/img_arrow-icon.png" alt="Arrow Icon" style="width: 50px; height: 50px;">
+    </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script> 
+    <script src="js/animation.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/projectCards.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>
