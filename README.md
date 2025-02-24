@@ -1,61 +1,16 @@
-# Portfolio Personnel Moderne
+# Portfolio d'Anthony
 
-Un portfolio personnel élégant et moderne avec des animations fluides et un design responsive.
+## À propos
+Bienvenue sur mon portfolio ! Ce portfolio présente mes projets récents et mes compétences.
 
-## Structure du Projet
+## Projets
+- **SAE Socket**: L'explication est à cette adresse -> [SAE Socket](https://github.com/louisprvst/SAE_Socket).
+- **Image Processing**: L'explication est à cette adresse -> [Image Processing](https://github.com/louisprvst/image-processing).
 
-```
-portfolio/
-├── index.html          # Page principale
-├── css/
-│   ├── style.css      # Styles principaux
-│   └── animations.css # Animations CSS
-├── js/
-│   ├── main.js        # Logique principale
-│   └── animations.js  # Animations JavaScript
-└── README.md          # Documentation
-```
+## Compétences
+- Langages de programmation: JavaScript.
+- Technologies: HTML, CSS, etc.
+- Outils: Git, Windsurf
 
-## Fonctionnalités
-
-- Design moderne et responsive
-- Mode sombre/clair
-- Animations fluides et interactives
-- Section projets dynamique
-- Formulaire de contact
-- Navigation fluide
-- Effets de parallaxe
-- Animations au défilement
-
-## Technologies Utilisées
-
-- HTML5
-- CSS3 (Animations, Flexbox, Grid)
-- JavaScript (ES6+)
-- Font Awesome (Icons)
-- Google Fonts
-
-## Personnalisation
-
-1. Modifiez les projets dans `js/main.js`
-2. Ajustez les couleurs dans `css/style.css` (variables CSS)
-3. Personnalisez les animations dans `css/animations.css`
-4. Modifiez le contenu dans `index.html`
-
-## Comment Utiliser
-
-1. Clonez ce repository
-2. Ouvrez `index.html` dans votre navigateur
-3. Personnalisez le contenu selon vos besoins
-
-## Optimisation
-
-Le site est optimisé pour :
-- Performance
-- Accessibilité
-- SEO
-- Compatibilité navigateurs
-
-## Licence
-
-MIT License
+## Contact
+Vous pouvez me contacter à l'adresse suivante : [antho.moi.62730@gmail.com](mailto:antho.moi.62730@gmail.com)
